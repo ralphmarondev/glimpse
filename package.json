@@ -1,28 +1,30 @@
 {
-  "name": "glimpse",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "@types/node": "^22.13.10",
-    "bootstrap": "^5.3.3",
-    "sass": "^1.85.1",
-    "sass-loader": "^16.0.5",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0",
-    "vuex": "^4.0.2"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "@vue/tsconfig": "^0.7.0",
-    "typescript": "~5.7.2",
-    "vite": "^6.2.0",
-    "vue-tsc": "^2.2.4"
-  }
+	"name": "glimpse",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc -b && vite build",
+		"preview": "vite preview",
+		"deploy": "yarn build && gh-pages -d dist"
+	},
+	"dependencies": {
+		"@popperjs/core": "^2.11.8",
+		"@types/node": "^22.13.10",
+		"bootstrap": "^5.3.3",
+		"gh-pages": "^6.3.0",
+		"sass": "^1.85.1",
+		"sass-loader": "^16.0.5",
+		"vue": "^3.5.13",
+		"vue-router": "^4.5.0",
+		"vuex": "^4.0.2"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^5.2.1",
+		"@vue/tsconfig": "^0.7.0",
+		"typescript": "~5.7.2",
+		"vite": "^6.2.0",
+		"vue-tsc": "^2.2.4"
+	}
 }
